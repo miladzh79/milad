@@ -1,0 +1,188 @@
+@charset "utf-8" ;
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "Btitr";
+    src: url(../fonts/Btitr.ttf);
+}
+@font-face {
+    font-family: "Bnazanin";
+    src: url(../fonts/BNazanin.ttf);
+}
+
+
+html {
+    font-size: 100% ;
+    font-family: Btitr ,calibri ,Btitr ;
+    font-weight: lighterS;
+    color: #520E72;
+}
+
+body {
+    background: url(../images/background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    position: relative;
+    
+}
+
+.contianer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 26rem;
+    background-color:rgba(255, 255, 255, 0.3) ;
+    backdrop-filter:blur(4px);  
+    border-radius: 1.5rem;
+    border: 1px solid #707070;
+    padding: 1.5rem;
+}
+
+.btn-back {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: end;
+    font-size: 2.5rem;
+    margin-bottom: .5rem;
+    color: #ffffff;
+    cursor: default;
+}
+.btn-back i {
+    cursor: pointer;
+}
+
+.form-control {
+    font-family: Bnazanin,'Times New Roman', Times, serif;
+    padding-right: 3px;
+    font-size: 1.2rem;
+    margin-bottom: .4rem;
+    border-radius: .5rem;
+    border: 1px solid rgba(0, 0, 0, .3);
+    height: 2rem;
+    width: 19rem;
+    background-color: rgba(255, 255, 255, .3);
+    margin-right: .5rem ;
+}
+
+.user {
+    display: flex;
+    margin-bottom: .5rem;
+}
+
+.pass {
+    display: flex;
+}
+
+.pass input {
+    margin-right: 1.2rem;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 4.9rem .5rem 0rem;
+}
+.link p,a {
+    text-decoration: none;
+    font-size: .8rem;
+    word-spacing: .1rem;
+    color: #520E72;
+    cursor: pointer;
+}
+.link-btn {
+    cursor: default;
+    width: 0;
+}
+.btn-login , .btn-givepass {
+    width: 10rem;
+    height: 2.5rem;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center; */
+    margin-right: 9rem;
+    padding: 0.2rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+    color: white;
+    background-color: #0e921385;
+    border: 1.5px solid rgb(0 0 0 / 52%);
+    cursor: pointer;
+}
+.btn-givepass {
+    display: none;
+}
+
+@media screen and (max-width: 468px) {
+    .form {
+            width: 100% ;
+            height: 100% ;
+            margin-top: 5rem;
+            border-radius: 0;
+    }
+}
+
+@media screen and (max-width: 381px) {
+    .user {
+        flex-direction: column;
+    }
+    .pass {
+        flex-direction: column;
+    }
+    .link {
+        margin-right: 1.9rem;
+    }
+    .form-control {
+        margin-right: 1.5rem ;
+    }
+    .pass input {
+        margin-right: 1.5rem;
+    }
+    .form label {
+        margin-right: 2rem ;
+        }
+    .btn-login , .btn-givepass{
+        margin-right: 6rem;
+    }
+}   
+
+@media screen and (max-width: 321px) {
+    .link {
+        margin-right: .9rem;
+    }
+    .form-control {
+        margin-right: .6rem ;
+    }
+    .pass input {
+        margin-right: .6rem;
+    }
+    .form label {
+        margin-right: 1.1rem ;
+        }
+    .user {
+        margin-right: 0rem;
+    }
+    .pass {
+        margin-right: 0rem;
+    }
+    .btn-login , .btn-givepass {
+        margin-right: 6rem;
+    }
+}
+
